@@ -40,7 +40,12 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(794, 350);
+            tabControlRegister.Location = new Point(-4, 48);
+            tabControlRegister.Size = new Size(695, 262);
+            // 
+            // tabPageList
+            // 
+            tabPageList.Size = new Size(687, 227);
             // 
             // tabPageRegister
             // 
@@ -50,7 +55,7 @@
             tabPageRegister.Controls.Add(txtId);
             tabPageRegister.Controls.Add(txtPrice);
             tabPageRegister.Controls.Add(txtName);
-            tabPageRegister.Size = new Size(786, 315);
+            tabPageRegister.Size = new Size(687, 227);
             tabPageRegister.Controls.SetChildIndex(txtName, 0);
             tabPageRegister.Controls.SetChildIndex(txtPrice, 0);
             tabPageRegister.Controls.SetChildIndex(txtId, 0);
@@ -70,7 +75,8 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(17, 21);
+            txtName.Location = new Point(14, 31);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -82,7 +88,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(312, 48);
+            txtName.Size = new Size(273, 48);
             txtName.TabIndex = 3;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -101,7 +107,8 @@
             txtPrice.HideSelection = true;
             txtPrice.Hint = "Price";
             txtPrice.LeadingIcon = null;
-            txtPrice.Location = new Point(17, 84);
+            txtPrice.Location = new Point(14, 83);
+            txtPrice.Margin = new Padding(3, 2, 3, 2);
             txtPrice.MaxLength = 32767;
             txtPrice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtPrice.Name = "txtPrice";
@@ -113,7 +120,7 @@
             txtPrice.SelectionLength = 0;
             txtPrice.SelectionStart = 0;
             txtPrice.ShortcutsEnabled = true;
-            txtPrice.Size = new Size(312, 48);
+            txtPrice.Size = new Size(273, 48);
             txtPrice.TabIndex = 4;
             txtPrice.TabStop = false;
             txtPrice.TextAlign = HorizontalAlignment.Left;
@@ -132,7 +139,8 @@
             txtId.HideSelection = true;
             txtId.Hint = "Id";
             txtId.LeadingIcon = null;
-            txtId.Location = new Point(402, 21);
+            txtId.Location = new Point(339, 31);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -144,7 +152,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(312, 48);
+            txtId.Size = new Size(273, 48);
             txtId.TabIndex = 5;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -163,7 +171,8 @@
             txtQuantity.HideSelection = true;
             txtQuantity.Hint = "Quantity";
             txtQuantity.LeadingIcon = null;
-            txtQuantity.Location = new Point(402, 84);
+            txtQuantity.Location = new Point(338, 83);
+            txtQuantity.Margin = new Padding(3, 2, 3, 2);
             txtQuantity.MaxLength = 32767;
             txtQuantity.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtQuantity.Name = "txtQuantity";
@@ -175,7 +184,7 @@
             txtQuantity.SelectionLength = 0;
             txtQuantity.SelectionStart = 0;
             txtQuantity.ShortcutsEnabled = true;
-            txtQuantity.Size = new Size(312, 48);
+            txtQuantity.Size = new Size(273, 48);
             txtQuantity.TabIndex = 6;
             txtQuantity.TabStop = false;
             txtQuantity.TextAlign = HorizontalAlignment.Left;
@@ -197,11 +206,12 @@
             txtCategory.Hint = "Category";
             txtCategory.IntegralHeight = false;
             txtCategory.ItemHeight = 43;
-            txtCategory.Location = new Point(16, 152);
+            txtCategory.Location = new Point(14, 135);
+            txtCategory.Margin = new Padding(3, 2, 3, 2);
             txtCategory.MaxDropDownItems = 4;
             txtCategory.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(313, 49);
+            txtCategory.Size = new Size(274, 49);
             txtCategory.StartIndex = 0;
             txtCategory.TabIndex = 7;
             // 
@@ -221,21 +231,23 @@
             txtSalesUnit.IntegralHeight = false;
             txtSalesUnit.ItemHeight = 43;
             txtSalesUnit.Items.AddRange(new object[] { "Kg", "Unit", "L" });
-            txtSalesUnit.Location = new Point(401, 152);
+            txtSalesUnit.Location = new Point(338, 135);
+            txtSalesUnit.Margin = new Padding(3, 2, 3, 2);
             txtSalesUnit.MaxDropDownItems = 4;
             txtSalesUnit.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtSalesUnit.Name = "txtSalesUnit";
-            txtSalesUnit.Size = new Size(313, 49);
+            txtSalesUnit.Size = new Size(274, 49);
             txtSalesUnit.StartIndex = 0;
             txtSalesUnit.TabIndex = 8;
             // 
             // ProductForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 417);
+            ClientSize = new Size(700, 313);
             Location = new Point(0, 0);
             Name = "ProductForm";
+            Padding = new Padding(3, 36, 3, 2);
             Text = "ProductForm";
             tabControlRegister.ResumeLayout(false);
             tabPageRegister.ResumeLayout(false);

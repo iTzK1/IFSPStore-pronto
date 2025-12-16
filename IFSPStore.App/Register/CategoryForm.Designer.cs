@@ -36,13 +36,18 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(794, 236);
+            tabControlRegister.Location = new Point(-4, 63);
+            tabControlRegister.Size = new Size(695, 162);
+            // 
+            // tabPageList
+            // 
+            tabPageList.Size = new Size(687, 142);
             // 
             // tabPageRegister
             // 
             tabPageRegister.Controls.Add(txtId);
             tabPageRegister.Controls.Add(txtName);
-            tabPageRegister.Size = new Size(786, 201);
+            tabPageRegister.Size = new Size(687, 127);
             tabPageRegister.Controls.SetChildIndex(txtName, 0);
             tabPageRegister.Controls.SetChildIndex(txtId, 0);
             // 
@@ -58,7 +63,8 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(21, 29);
+            txtName.Location = new Point(18, 22);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -70,7 +76,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(312, 48);
+            txtName.Size = new Size(273, 48);
             txtName.TabIndex = 2;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -89,7 +95,8 @@
             txtId.HideSelection = true;
             txtId.Hint = "Id";
             txtId.LeadingIcon = null;
-            txtId.Location = new Point(436, 29);
+            txtId.Location = new Point(382, 22);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -101,7 +108,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(312, 48);
+            txtId.Size = new Size(273, 48);
             txtId.TabIndex = 3;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -110,11 +117,12 @@
             // 
             // CategoryForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 303);
+            ClientSize = new Size(700, 227);
             Location = new Point(0, 0);
             Name = "CategoryForm";
+            Padding = new Padding(3, 36, 3, 2);
             Text = "Category Register";
             tabControlRegister.ResumeLayout(false);
             tabPageRegister.ResumeLayout(false);

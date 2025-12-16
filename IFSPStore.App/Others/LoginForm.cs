@@ -66,12 +66,7 @@ namespace IFSPStore.App.Others
                 _userService.Add<User, User, UserValidator>(user);
             }
         }
-        private void lblDontHave_Click(object sender, EventArgs e)
-        {
-            UserForm.loginUser = true;
-            var userForm = ConfigureDI.serviceProvider!.GetService<UserForm>();
-            userForm!.ShowDialog();
-        }
+       
 
         
     }

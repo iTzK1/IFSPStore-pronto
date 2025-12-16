@@ -74,5 +74,7 @@ namespace IFSPStore.App.Register
             txtName.Text = record.Cells["Name"].Value.ToString();
             txtState.Text = record.Cells["State"].Value.ToString();
         }
+
+     
     }
 }

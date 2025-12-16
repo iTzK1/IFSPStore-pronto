@@ -42,8 +42,8 @@ namespace IFSPStore.App.Register
                     var user = new User();
                     FormToObject(user);
                     _userService.Add<User, User, UserValidator>(user);
-                    
-                    if(loginUser)
+
+                    if (loginUser)
                     {
                         MainForm.user = user;
                         loginUser = false;
@@ -88,5 +88,7 @@ namespace IFSPStore.App.Register
             txtEmail.Text = record.Cells["Email"].Value.ToString();
             txtPassword.Text = record.Cells["Password"].Value.ToString();
         }
+
+     
     }
 }

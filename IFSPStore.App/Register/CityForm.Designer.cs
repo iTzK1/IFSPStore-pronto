@@ -37,14 +37,19 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(794, 260);
+            tabControlRegister.Location = new Point(-4, 48);
+            tabControlRegister.Size = new Size(695, 195);
+            // 
+            // tabPageList
+            // 
+            tabPageList.Size = new Size(687, 160);
             // 
             // tabPageRegister
             // 
             tabPageRegister.Controls.Add(txtState);
             tabPageRegister.Controls.Add(txtId);
             tabPageRegister.Controls.Add(txtName);
-            tabPageRegister.Size = new Size(786, 225);
+            tabPageRegister.Size = new Size(687, 160);
             tabPageRegister.Controls.SetChildIndex(txtName, 0);
             tabPageRegister.Controls.SetChildIndex(txtId, 0);
             tabPageRegister.Controls.SetChildIndex(txtState, 0);
@@ -61,7 +66,8 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(18, 23);
+            txtName.Location = new Point(16, 4);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -73,7 +79,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(312, 48);
+            txtName.Size = new Size(273, 48);
             txtName.TabIndex = 3;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -92,7 +98,8 @@
             txtId.HideSelection = true;
             txtId.Hint = "Id";
             txtId.LeadingIcon = null;
-            txtId.Location = new Point(436, 23);
+            txtId.Location = new Point(328, 4);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -104,7 +111,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(312, 48);
+            txtId.Size = new Size(273, 48);
             txtId.TabIndex = 4;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -127,22 +134,23 @@
             txtState.IntegralHeight = false;
             txtState.ItemHeight = 43;
             txtState.Items.AddRange(new object[] { "", "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" });
-            txtState.Location = new Point(18, 88);
+            txtState.Location = new Point(16, 56);
+            txtState.Margin = new Padding(3, 2, 3, 2);
             txtState.MaxDropDownItems = 4;
             txtState.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtState.Name = "txtState";
-            txtState.Size = new Size(312, 49);
+            txtState.Size = new Size(274, 49);
             txtState.StartIndex = 0;
             txtState.TabIndex = 5;
             // 
             // CityForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 327);
+            ClientSize = new Size(700, 245);
             Location = new Point(0, 0);
             Name = "CityForm";
-            StartPosition = FormStartPosition.CenterScreen;
+            Padding = new Padding(3, 36, 3, 2);
             Text = "CityForm";
             tabControlRegister.ResumeLayout(false);
             tabPageRegister.ResumeLayout(false);

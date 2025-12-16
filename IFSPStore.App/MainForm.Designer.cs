@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ReaLTaiizor.ControlRenderer controlRenderer1 = new ReaLTaiizor.ControlRenderer();
-            ReaLTaiizor.MSColorTable msColorTable1 = new ReaLTaiizor.MSColorTable();
             formMenuStrip = new ReaLTaiizor.Controls.FormMenuStrip();
+            reportToolStripMenuItem = new ToolStripMenuItem();
             registerToolStripMenuItem = new ToolStripMenuItem();
             userToolStripMenuItem = new ToolStripMenuItem();
             categoryToolStripMenuItem = new ToolStripMenuItem();
@@ -38,7 +37,6 @@
             cityToolStripMenuItem = new ToolStripMenuItem();
             customerToolStripMenuItem = new ToolStripMenuItem();
             saleToolStripMenuItem = new ToolStripMenuItem();
-            reportToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             closeToolStripMenuItem = new ToolStripMenuItem();
             lblUser = new Label();
@@ -47,24 +45,31 @@
             // 
             // formMenuStrip
             // 
+            formMenuStrip.AutoSize = false;
             formMenuStrip.ImageScalingSize = new Size(20, 20);
-            formMenuStrip.Items.AddRange(new ToolStripItem[] { registerToolStripMenuItem, reportToolStripMenuItem, helpToolStripMenuItem, closeToolStripMenuItem });
+            formMenuStrip.Items.AddRange(new ToolStripItem[] { reportToolStripMenuItem, registerToolStripMenuItem, helpToolStripMenuItem, closeToolStripMenuItem });
             formMenuStrip.Location = new Point(3, 48);
+            formMenuStrip.Margin = new Padding(0, 10, 0, 0);
             formMenuStrip.Name = "formMenuStrip";
             formMenuStrip.Padding = new Padding(5, 2, 0, 2);
-            controlRenderer1.ColorTable = msColorTable1;
-            controlRenderer1.RoundedEdges = true;
-            formMenuStrip.Renderer = controlRenderer1;
-            formMenuStrip.Size = new Size(736, 24);
+            formMenuStrip.RenderMode = ToolStripRenderMode.Professional;
+            formMenuStrip.Size = new Size(736, 32);
             formMenuStrip.TabIndex = 1;
             formMenuStrip.Text = "formMenuStrip1";
+            // 
+            // reportToolStripMenuItem
+            // 
+            reportToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
+            reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            reportToolStripMenuItem.Size = new Size(54, 28);
+            reportToolStripMenuItem.Text = "Report";
             // 
             // registerToolStripMenuItem
             // 
             registerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { userToolStripMenuItem, categoryToolStripMenuItem, productToolStripMenuItem, cityToolStripMenuItem, customerToolStripMenuItem, saleToolStripMenuItem });
             registerToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
             registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            registerToolStripMenuItem.Size = new Size(61, 20);
+            registerToolStripMenuItem.Size = new Size(61, 28);
             registerToolStripMenuItem.Text = "Register";
             // 
             // userToolStripMenuItem
@@ -115,25 +120,18 @@
             saleToolStripMenuItem.Text = "Sale";
             saleToolStripMenuItem.Click += saleToolStripMenuItem_Click;
             // 
-            // reportToolStripMenuItem
-            // 
-            reportToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
-            reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            reportToolStripMenuItem.Size = new Size(54, 20);
-            reportToolStripMenuItem.Text = "Report";
-            // 
             // helpToolStripMenuItem
             // 
             helpToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Size = new Size(44, 28);
             helpToolStripMenuItem.Text = "Help";
             // 
             // closeToolStripMenuItem
             // 
             closeToolStripMenuItem.ForeColor = Color.FromArgb(80, 80, 80);
             closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            closeToolStripMenuItem.Size = new Size(48, 20);
+            closeToolStripMenuItem.Size = new Size(48, 28);
             closeToolStripMenuItem.Text = "Close";
             closeToolStripMenuItem.Click += closeToolStripMenuItem_Click;
             // 
@@ -141,7 +139,7 @@
             // 
             lblUser.AutoSize = true;
             lblUser.Dock = DockStyle.Bottom;
-            lblUser.Location = new Point(3, 394);
+            lblUser.Location = new Point(3, 372);
             lblUser.Name = "lblUser";
             lblUser.Size = new Size(33, 15);
             lblUser.TabIndex = 3;
@@ -151,12 +149,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(742, 411);
+            ClientSize = new Size(742, 389);
             Controls.Add(lblUser);
             Controls.Add(formMenuStrip);
             IsMdiContainer = true;
             MainMenuStrip = formMenuStrip;
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(30, 20, 3, 2);
             Name = "MainForm";
             Padding = new Padding(3, 48, 3, 2);
             Text = "IFSP Store";
@@ -165,6 +163,7 @@
             formMenuStrip.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
+
         }
 
         #endregion

@@ -1,4 +1,4 @@
-﻿namespace IFSPStore.App.ViewModel
+﻿    namespace IFSPStore.App.ViewModel
 {
     public class CategoryViewModel
     {

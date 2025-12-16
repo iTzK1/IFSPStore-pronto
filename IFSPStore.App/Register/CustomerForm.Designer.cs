@@ -40,7 +40,12 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(794, 438);
+            tabControlRegister.Location = new Point(-4, 48);
+            tabControlRegister.Size = new Size(747, 354);
+            // 
+            // tabPageList
+            // 
+            tabPageList.Size = new Size(687, 293);
             // 
             // tabPageRegister
             // 
@@ -50,7 +55,7 @@
             tabPageRegister.Controls.Add(txtDocument);
             tabPageRegister.Controls.Add(txtAddress);
             tabPageRegister.Controls.Add(txtName);
-            tabPageRegister.Size = new Size(786, 403);
+            tabPageRegister.Size = new Size(739, 319);
             tabPageRegister.Controls.SetChildIndex(txtName, 0);
             tabPageRegister.Controls.SetChildIndex(txtAddress, 0);
             tabPageRegister.Controls.SetChildIndex(txtDocument, 0);
@@ -70,7 +75,8 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(22, 18);
+            txtName.Location = new Point(20, 12);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -82,7 +88,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(612, 48);
+            txtName.Size = new Size(536, 48);
             txtName.TabIndex = 3;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -101,7 +107,8 @@
             txtAddress.HideSelection = true;
             txtAddress.Hint = "Address";
             txtAddress.LeadingIcon = null;
-            txtAddress.Location = new Point(22, 72);
+            txtAddress.Location = new Point(20, 64);
+            txtAddress.Margin = new Padding(3, 2, 3, 2);
             txtAddress.MaxLength = 32767;
             txtAddress.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtAddress.Name = "txtAddress";
@@ -113,7 +120,7 @@
             txtAddress.SelectionLength = 0;
             txtAddress.SelectionStart = 0;
             txtAddress.ShortcutsEnabled = true;
-            txtAddress.Size = new Size(752, 48);
+            txtAddress.Size = new Size(658, 48);
             txtAddress.TabIndex = 4;
             txtAddress.TabStop = false;
             txtAddress.TextAlign = HorizontalAlignment.Left;
@@ -132,7 +139,8 @@
             txtDocument.HideSelection = true;
             txtDocument.Hint = "Document";
             txtDocument.LeadingIcon = null;
-            txtDocument.Location = new Point(22, 126);
+            txtDocument.Location = new Point(19, 116);
+            txtDocument.Margin = new Padding(3, 2, 3, 2);
             txtDocument.MaxLength = 32767;
             txtDocument.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtDocument.Name = "txtDocument";
@@ -144,7 +152,7 @@
             txtDocument.SelectionLength = 0;
             txtDocument.SelectionStart = 0;
             txtDocument.ShortcutsEnabled = true;
-            txtDocument.Size = new Size(752, 48);
+            txtDocument.Size = new Size(658, 48);
             txtDocument.TabIndex = 5;
             txtDocument.TabStop = false;
             txtDocument.TextAlign = HorizontalAlignment.Left;
@@ -163,7 +171,8 @@
             txtId.HideSelection = true;
             txtId.Hint = "Id";
             txtId.LeadingIcon = null;
-            txtId.Location = new Point(658, 18);
+            txtId.Location = new Point(562, 12);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -175,7 +184,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(116, 48);
+            txtId.Size = new Size(102, 48);
             txtId.TabIndex = 6;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -197,11 +206,12 @@
             txtCity.Hint = "City";
             txtCity.IntegralHeight = false;
             txtCity.ItemHeight = 43;
-            txtCity.Location = new Point(22, 260);
+            txtCity.Location = new Point(19, 220);
+            txtCity.Margin = new Padding(3, 2, 3, 2);
             txtCity.MaxDropDownItems = 4;
             txtCity.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCity.Name = "txtCity";
-            txtCity.Size = new Size(752, 49);
+            txtCity.Size = new Size(658, 49);
             txtCity.StartIndex = 0;
             txtCity.TabIndex = 7;
             // 
@@ -217,7 +227,8 @@
             txtDistrict.HideSelection = true;
             txtDistrict.Hint = "District";
             txtDistrict.LeadingIcon = null;
-            txtDistrict.Location = new Point(22, 180);
+            txtDistrict.Location = new Point(19, 168);
+            txtDistrict.Margin = new Padding(3, 2, 3, 2);
             txtDistrict.MaxLength = 32767;
             txtDistrict.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtDistrict.Name = "txtDistrict";
@@ -229,7 +240,7 @@
             txtDistrict.SelectionLength = 0;
             txtDistrict.SelectionStart = 0;
             txtDistrict.ShortcutsEnabled = true;
-            txtDistrict.Size = new Size(752, 48);
+            txtDistrict.Size = new Size(658, 48);
             txtDistrict.TabIndex = 8;
             txtDistrict.TabStop = false;
             txtDistrict.TextAlign = HorizontalAlignment.Left;
@@ -238,11 +249,12 @@
             // 
             // CustomerForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 505);
+            ClientSize = new Size(752, 405);
             Location = new Point(0, 0);
             Name = "CustomerForm";
+            Padding = new Padding(3, 36, 3, 2);
             Text = "CustomerForm";
             tabControlRegister.ResumeLayout(false);
             tabPageRegister.ResumeLayout(false);

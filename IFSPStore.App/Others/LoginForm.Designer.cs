@@ -31,7 +31,6 @@
             txtLogin = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             txtPassword = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            lblDontHave = new Label();
             lblTitle = new Label();
             SuspendLayout();
             // 
@@ -121,17 +120,6 @@
             materialButton1.UseVisualStyleBackColor = true;
             materialButton1.Click += btnEnter_Click;
             // 
-            // lblDontHave
-            // 
-            lblDontHave.AutoSize = true;
-            lblDontHave.ForeColor = SystemColors.HotTrack;
-            lblDontHave.Location = new Point(33, 214);
-            lblDontHave.Name = "lblDontHave";
-            lblDontHave.Size = new Size(108, 15);
-            lblDontHave.TabIndex = 3;
-            lblDontHave.Text = "Don't have a login?";
-            lblDontHave.Click += lblDontHave_Click;
-            // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
@@ -149,7 +137,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(354, 305);
             Controls.Add(lblTitle);
-            Controls.Add(lblDontHave);
             Controls.Add(materialButton1);
             Controls.Add(txtPassword);
             Controls.Add(txtLogin);
@@ -167,7 +154,6 @@
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtLogin;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtPassword;
         private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private Label lblDontHave;
         private Label lblTitle;
     }
 }

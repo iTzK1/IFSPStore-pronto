@@ -39,7 +39,12 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(888, 339);
+            tabControlRegister.Location = new Point(-4, 48);
+            tabControlRegister.Size = new Size(906, 346);
+            // 
+            // tabPageList
+            // 
+            tabPageList.Size = new Size(889, 291);
             // 
             // tabPageRegister
             // 
@@ -48,7 +53,7 @@
             tabPageRegister.Controls.Add(txtPassword);
             tabPageRegister.Controls.Add(txtEmail);
             tabPageRegister.Controls.Add(txtName);
-            tabPageRegister.Size = new Size(880, 304);
+            tabPageRegister.Size = new Size(898, 311);
             tabPageRegister.Controls.SetChildIndex(txtName, 0);
             tabPageRegister.Controls.SetChildIndex(txtEmail, 0);
             tabPageRegister.Controls.SetChildIndex(txtPassword, 0);
@@ -67,7 +72,8 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(22, 23);
+            txtName.Location = new Point(19, 32);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -79,7 +85,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(750, 48);
+            txtName.Size = new Size(656, 48);
             txtName.TabIndex = 3;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -98,7 +104,8 @@
             txtEmail.HideSelection = true;
             txtEmail.Hint = "E-mail";
             txtEmail.LeadingIcon = null;
-            txtEmail.Location = new Point(22, 131);
+            txtEmail.Location = new Point(19, 136);
+            txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.MaxLength = 32767;
             txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtEmail.Name = "txtEmail";
@@ -110,7 +117,7 @@
             txtEmail.SelectionLength = 0;
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
-            txtEmail.Size = new Size(846, 48);
+            txtEmail.Size = new Size(740, 48);
             txtEmail.TabIndex = 4;
             txtEmail.TabStop = false;
             txtEmail.TextAlign = HorizontalAlignment.Left;
@@ -129,7 +136,8 @@
             txtPassword.HideSelection = true;
             txtPassword.Hint = "Password";
             txtPassword.LeadingIcon = null;
-            txtPassword.Location = new Point(22, 185);
+            txtPassword.Location = new Point(19, 188);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.MaxLength = 32767;
             txtPassword.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtPassword.Name = "txtPassword";
@@ -141,7 +149,7 @@
             txtPassword.SelectionLength = 0;
             txtPassword.SelectionStart = 0;
             txtPassword.ShortcutsEnabled = true;
-            txtPassword.Size = new Size(846, 48);
+            txtPassword.Size = new Size(740, 48);
             txtPassword.TabIndex = 5;
             txtPassword.TabStop = false;
             txtPassword.TextAlign = HorizontalAlignment.Left;
@@ -160,7 +168,8 @@
             txtLogin.HideSelection = true;
             txtLogin.Hint = "Login";
             txtLogin.LeadingIcon = null;
-            txtLogin.Location = new Point(22, 77);
+            txtLogin.Location = new Point(19, 84);
+            txtLogin.Margin = new Padding(3, 2, 3, 2);
             txtLogin.MaxLength = 32767;
             txtLogin.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtLogin.Name = "txtLogin";
@@ -172,7 +181,7 @@
             txtLogin.SelectionLength = 0;
             txtLogin.SelectionStart = 0;
             txtLogin.ShortcutsEnabled = true;
-            txtLogin.Size = new Size(846, 48);
+            txtLogin.Size = new Size(740, 48);
             txtLogin.TabIndex = 6;
             txtLogin.TabStop = false;
             txtLogin.TextAlign = HorizontalAlignment.Left;
@@ -191,7 +200,8 @@
             txtId.HideSelection = true;
             txtId.Hint = "Id";
             txtId.LeadingIcon = null;
-            txtId.Location = new Point(788, 23);
+            txtId.Location = new Point(681, 32);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -203,7 +213,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(80, 48);
+            txtId.Size = new Size(70, 48);
             txtId.TabIndex = 7;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -212,11 +222,12 @@
             // 
             // UserForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(894, 406);
+            ClientSize = new Size(911, 396);
             Location = new Point(0, 0);
             Name = "UserForm";
+            Padding = new Padding(3, 36, 3, 2);
             Text = "UserForm";
             tabControlRegister.ResumeLayout(false);
             tabPageRegister.ResumeLayout(false);
